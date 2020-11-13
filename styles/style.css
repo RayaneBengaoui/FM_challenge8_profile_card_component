@@ -34,12 +34,111 @@ body {
           justify-content: center;
 }
 
-.card {
+.card-container .card {
+  margin: 1rem;
   width: 20rem;
   height: 23rem;
-  background-color: lightcoral;
   border-radius: 10px;
+  overflow: hidden;
   -webkit-box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.2);
           box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card .top-part {
+  height: 38%;
+  background-image: url("../images/bg-pattern-card.svg");
+}
+
+.card-container .card .middle-part {
+  height: 40%;
+  position: relative;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card .middle-part img {
+  border-radius: 50%;
+  border: solid white 4px;
+  position: absolute;
+  left: 50%;
+  top: -35%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.card-container .card .middle-part .identity-container {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-container .card .middle-part .identity-container h1 {
+  font-size: 18px;
+  color: #2d3248;
+}
+
+.card-container .card .middle-part .identity-container h2 {
+  padding-left: 0.5rem;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.card-container .card .middle-part h3 {
+  padding-top: 0.5rem;
+  font-size: 14px;
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+.card-container .card .bottom-part {
+  height: 22%;
+  background: white;
+}
+
+.card-container .card .bottom-part .line {
+  height: 2%;
+  background: #969696;
+  opacity: 25%;
+}
+
+.card-container .card .bottom-part .stats-container {
+  height: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5rem 1rem;
+}
+
+.card-container .card .bottom-part .stats-container .stat {
+  text-align: center;
+}
+
+.card-container .card .bottom-part .stats-container .stat .number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.card-container .card .bottom-part .stats-container .stat .information {
+  padding-top: 0.3rem;
+  font-size: 10px;
+  letter-spacing: 0.05rem;
+  color: #6a6f81;
 }
 /*# sourceMappingURL=style.css.map */
