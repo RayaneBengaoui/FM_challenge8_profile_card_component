@@ -8,4 +8,38 @@
 html {
   font-family: "Kumbh Sans", sans-serif;
 }
+
+body {
+  min-height: 100vh;
+  background: #19a2ae;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: -60% -25rem, 160% 32rem;
+  background-size: 68% 110%, 75% 120%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 20rem;
+  height: 23rem;
+  background-color: lightcoral;
+  border-radius: 10px;
+  -webkit-box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.2);
+}
 /*# sourceMappingURL=style.css.map */
